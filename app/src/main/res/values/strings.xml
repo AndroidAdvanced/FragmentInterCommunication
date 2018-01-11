@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">FragmentInterCommunication</string>
+
+    <string-array name="countries">
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Russia</item>
+        <item>China</item>
+    </string-array>
+
+    <string name="india">
+        This is India Description.
+    </string>
+
+    <string name="indonesia">
+        This is Indonesia Description.
+    </string>
+
+    <string name="russia">
+        This is Russia Description.
+    </string>
+
+    <string name="china">
+        This is China Description.
+    </string>
+
+</resources>
