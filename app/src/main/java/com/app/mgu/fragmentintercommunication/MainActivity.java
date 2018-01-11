@@ -10,14 +10,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener, CallBackInterface {
 
-    FragmentManager fragmentManager;
+    FragmentManager fragmentManager1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
 
-        fragmentManager = getSupportFragmentManager();
+        fragmentManager1 = getSupportFragmentManager();
 
         addCountriesFragment();
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
     void addCountriesFragment() {
 
-        ft = fragmentManager.beginTransaction();
+        ft = fragmentManager1.beginTransaction();
 
         FragmentCountry fragmentCountry = new FragmentCountry();
         fragmentCountry.setCallbackInterface(this);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
     void addCountryDesc() {
 
-        ft = fragmentManager.beginTransaction();
+        ft = fragmentManager1.beginTransaction();
 
         FragmentCountryDescription fragmentCountry = new FragmentCountryDescription();
         ft.replace(R.id.act, fragmentCountry);
