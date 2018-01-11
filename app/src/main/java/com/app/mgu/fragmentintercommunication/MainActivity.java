@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         ft.replace(R.id.act, fragmentCountry);
         ft.addToBackStack(null);
         ft.commit();
+
     }
 
 //    @Override
